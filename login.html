@@ -1,21 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="expires" content="-1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- change the title here -->
     <title>Welcome to Seattle Community Network</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body class="myDivC">
-
--->
+    -->
     <div class="back-purple back-grad"></div>
     <div class="back-yellow back-grad"></div>
 
@@ -31,65 +30,61 @@
     <script>
         function doLogin() {
             document.sendin.username.value = document.login.username.value;
-            document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+            document.sendin.password.value = hexMD5(
+                "$(chap-id)" + document.login.password.value + "$(chap-challenge)"
+            );
             document.sendin.submit();
             return false;
         }
-
     </script>
     $(endif)
     <div class="ie-fixMinHeight">
         <div class="main">
             <div class="welcome">
-                <img src="img/lcl-logo.png" width="140" height="140" style="float: left; margin-left: 0px;">
-                
-                <p style="max-width: 800px; padding-left: 20px;"> 
-                    <span style="font-size: 33px ; font-weight: 500;">
-                        Welcome to
-                    </span> 
-                    <br/>
+                <img src="img/lcl-logo.png" width="140" height="140" style="float: left; margin-left: 0px" />
 
-                    <span style="font-size: 35px; 
-                        font-weight: bold; 
-                        color: #49009F; 
-                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">
+                <p style="max-width: 800px; padding-left: 20px">
+                    <span style="font-size: 33px; font-weight: 500"> Welcome to </span>
+                    <br />
+
+                    <span style="
+                font-size: 35px;
+                font-weight: bold;
+                color: #49009f;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+              ">
                         Seattle Community Network
-                    </span> 
-                    <br/>
-                    <br/>
+                    </span>
+                    <br />
+                    <br />
 
-                    <span 
-                        style="font-weight: 200;
-                        font-size: 19px;">
-                        Non-profit providing local community-owned and operated 4G LTE Internet access for you!
-                    </span> 
+                    <span style="font-weight: 200; font-size: 19px">
+                        Non-profit providing local community-owned and operated 4G LTE
+                        Internet access for you!
+                    </span>
                 </p>
-                
 
-
-
-            <!-- below if the code for the form login (username & pass) -->
-            <!-- <div class="wrap animated fadeIn"> -->
+                <!-- below if the code for the form login (username & pass) -->
+                <!-- <div class="wrap animated fadeIn"> -->
                 <!-- <form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
                     <input type="hidden" name="dst" value="$(link-orig)" />
                     <input type="hidden" name="popup" value="true" /> -->
 
-                    <!-- change the logo here -->
-                    <!-- <svg class="logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174 42">
+                <!-- change the logo here -->
+                <!-- <svg class="logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174 42">
                         <path fill="#fff" d="M7.32 13.66L0 41.74 3.12 41.74 9.49 15.94 9.58 15.94 15.01 41.74 18.22 41.74 36.86 16.34 36.95 16.34 30.02 41.74 33.18 41.74 40.4 13.66 35.73 13.66 17.23 38.87 11.99 13.66 7.32 13.66zM43.43 21.45L38.19 41.74 41.16 41.74 46.4 21.45 43.43 21.45zM50.68 21.45L45.5 41.74 48.47 41.74 50.36 34.39 55.55 30.77 62.02 41.74 65.27 41.74 57.91 29.28 69.43 21.45 65.46 21.45 51.21 31.36 51.12 31.28 53.66 21.45 50.68 21.45z" />
                         <path d="M71.18 21.45L65.94 41.74h3l2.74-10.62c1-3.81 3.82-7.39 9.16-7.47.56 0 1.13 0 1.7 0l.66-2.48c-.52 0-1.09 0-1.61 0-4.34 0-6.94 2-8.82 5h-.1l1.23-4.68zM103.8 28.8c0-5-4-7.94-9.63-7.94-8.69 0-13.59 6.37-13.59 13 0 5.07 3.44 8.45 9.72 8.45 9 0 13.5-6.68 13.5-13.53m-3 .52c0 4.72-3.44 10.93-9.95 10.93-5 0-7.32-2.68-7.32-6.61 0-4.76 3.59-10.7 10.1-10.7 4.77 0 7.17 2.6 7.17 6.38M132.33 21.43L134.26 13.66 105.19 13.66 103.27 21.45 112.59 21.45 112.59 21.45 122.99 21.45 122.99 21.45 132.33 21.43zM111.67 25.17L107.55 41.74 117.93 41.74 122.06 25.17 122.06 25.16 111.67 25.16 111.67 25.17zM134 25.17l-4.11 16.57h9.35l4.1-16.57zm10.28-3.73l1.94-7.78h-9.34l-2 7.79zM150.09 13.66L143.11 41.74 152.45 41.74 153.91 35.92 156.04 34.34 159.34 41.74 169.49 41.74 163.26 29.55 174.26 21.33 163.07 21.33 156.18 27.3 156.09 27.3 159.44 13.66 150.09 13.66zM47.45 0c1.14 7.93 5.39 12.74 14.07 13.14A10.69 10.69 0 0 1 47.45 0" fill="#fff" fill-rule="evenodd" />
                         <path d="M42.91,1.4c.1,0,.11,0,.12.11A16.55,16.55,0,0,0,48.26,13a16.6,16.6,0,0,0,12,4.66c-10,4-20.55-5.6-17.33-16.28" fill="#fff" fill-rule="evenodd" /></svg> -->
 
+                <!-- <p class="info $(if error)alert$(endif)"> -->
+                <!-- $(if error == "")Please log in to use the internet hotspot service with Seattle Community Network$(if trial == 'yes')<br />Can't login? contact us, <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">click here</a>.$(endif) -->
+                <!-- $(if error == "")Please log in to use the internet hotspot service with Seattle Community Network$(if trial == 'yes')<br />Can't login? contact us, <a href="https://osticket.westus2.cloudapp.azure.com/index.php">click here</a>.$(endif) -->
+                <!-- $(endif) -->
 
-                    <!-- <p class="info $(if error)alert$(endif)"> -->
-                        <!-- $(if error == "")Please log in to use the internet hotspot service with Seattle Community Network$(if trial == 'yes')<br />Can't login? contact us, <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">click here</a>.$(endif) -->
-                        <!-- $(if error == "")Please log in to use the internet hotspot service with Seattle Community Network$(if trial == 'yes')<br />Can't login? contact us, <a href="https://osticket.westus2.cloudapp.azure.com/index.php">click here</a>.$(endif) -->
-                        <!-- $(endif) -->
-
-                        <!-- $(if error)$(error)$(endif) -->
-                    <!-- </p> -->
-                    <!-- <label> -->
-                        <!-- <img class="ico" src="img/user.svg" alt="#" />
+                <!-- $(if error)$(error)$(endif) -->
+                <!-- </p> -->
+                <!-- <label> -->
+                <!-- <img class="ico" src="img/user.svg" alt="#" />
                         <input name="username" type="text" value="$(username)" placeholder="Username" />
                     </label> 
 
@@ -102,23 +97,201 @@
 
                 </form> -->
                 <!-- <p> Powered by Seattle Community Network. <br> <a href="https://seattlecommunitynetwork.org/"> Learn more about us.</a></p> -->
+            </div>
+            <div class="topic">
+                <p>
+                    <span class="header"> Who we are? </span>
+                    <br />
+                    <span class="explanation">
+                        The Local Connectivity Lab (LCL) is a 501(c)(3) registered
+                        non-profit in partnership with the University of Washington (UW)
+                        to share free or low-cost broadband access in higher-need areas
+                        throughout the city.
+                    </span>
+                </p>
+                <img src="img/partnerLogos.png" width="420" height="160" style="float: left; margin-left: 20px" />
+            </div>
+
+            <div class="topic" style="flex-direction: column;">
+                <p>
+                    <span class="header"> Terms of Service </span>
+                    <br />
+                    <span class="explanation">
+                        By using our internet service, you hereby expressly acknowledge
+                        and agree that there are significant security, privacy and
+                        confidentiality risks inherent in accessing or transmitting
+                        information through the internet, whether the connection is
+                        facilitated through wired or wireless technology. Security issues
+                        include, without limitation, interception of transmissions, loss
+                        of data, and the introduction or viruses and other programs that
+                        can corrupt or damage your computer.
+                        <br></br>
+                        <br />
+                        Accordingly, you agree that the Seattle Community Network is not
+                        liable for any interception or transmissions, computer worms or
+                        viruses, loss of data, file corruption, hacking or damage to your
+                        computer or other devices that result from the transmission or
+                        download of information or materials through the internet service
+                        provided.
+                        <br></br>
+                        Use of the network of the Seattle Community Network is subject to
+                        the general restrictions outlined below. If abnormal, illegal, or
+                        unauthorized behavior is detected, including heavy consumption of
+                        bandwidth, the network provider reserves the right to permanently
+                        disconnect the offending device from the network
+                    </span>
+
+                <p style="padding-top: 20px;">
+                <details>
+                    <summary> Examples of Illegal Uses </summary>
+                    <p>
+                    <ul>
+                        The following are representative examples only and do not comprise a comprehensive list of
+                        illegal uses:
+                        <li>
+                            Spamming and invasion of privacy - Sending of unsolicited bulk and/or commercial messages
+                            over
+                            the Internet using the Service or using the Service for activities that invade another's
+                            privacy.
+                        </li>
+
+                        <li>
+                            Intellectual property right violations - Engaging in any activity that infringes or
+                            misappropriates the intellectual property rights of others, including patents, copyrights,
+                            trademarks, service marks, trade secrets, or any other proprietary right of any third party.
+
+                        </li>
+
+                        <li>
+                            Accessing illegally or without authorization computers, accounts, equipment or networks
+                            belonging to another party, or attempting to penetrate/circumvent security measures of
+                            another
+                            system. This includes any activity that may be used as a precursor to an attempted system
+                            penetration, including, but not limited to, port scans, stealth scans, or other information
+                            gathering activity.
+
+                        </li>
+
+                        <li>
+                            The transfer of technology, software, or other materials in violation of applicable export
+                            laws
+                            and regulations.
+                        </li>
+
+                        <li>
+                            Export Control Violations.
+                        </li>
+
+                        <li>
+                            Using the Service in violation of applicable law and regulation, including, but not limited
+                            to,
+                            advertising, transmitting, or otherwise making available ponzi schemes, pyramid schemes,
+                            fraudulently charging credit cards, pirating software, or making fraudulent offers to sell
+                            or
+                            buy products, items, or services.
+                        </li>
+
+                        <li>
+                            Uttering threats;
+                        </li>
+                        <li>
+                            Distribution of pornographic materials to minors;
+
+                        </li>
+                        <li>
+                            and Child pornography.
+                        </li>
+                    </ul>
+                    </p>
+                </details>
+
+                <details>
+                    <summary> Examples of Unacceptable Uses </summary>
+                    <p>
+                        <ul>
+                            The following are representative examples only and do not comprise a comprehensive list of unacceptable uses:
+                            <li>
+                                High bandwidth operations, such as large file transfers and media sharing with peer-to-peer programs (i.e.torrents).
+                            </li>
+    
+                            <li>
+                                Obscene or indecent speech or materials.
+                            </li>
+
+                            <li>
+                                Defamatory or abusive language.
+                            </li>
+    
+                            <li>
+                                Using the Service to transmit, post, upload, or otherwise making available defamatory, harassing, abusive, or threatening material or language that encourages bodily harm, destruction of property or harasses another.
+                            </li>
+    
+                            <li>
+                                Forging or misrepresenting message headers, whether in whole or in part, to mask the originator of the message.
+                            </li>
+    
+                            <li>
+                                Facilitating a Violation of these Terms of Use
+                            </li>
+    
+                            <li>
+                                Hacking.
+                            </li>
+                            <li>
+                                Distribution of Internet viruses, Trojan horses, or other destructive activities
+    
+                            </li>
+                            <li>
+                                Distributing information regarding the creation of and sending Internet viruses, worms, Trojan horses, pinging, flooding, mail-bombing, or denial of service attacks. Also, activities that disrupt the use of or interfere with the ability of others to effectively use the node or any connected network, system, service, or equipment.
+                            </li>
+                            <li>
+                                Advertising, transmitting, or otherwise making available any software product, product, or service that is designed to violate these Terms of Use, which includes the facilitation of the means to spam, initiation of pinging, flooding, mail-bombing, denial of service attacks, and piracy of software.
+                            </li>
+    
+                            <li>
+                                The sale, transfer, or rental of the Service to customers, clients or other third parties, either directly or as part of a service or product created for resale.
+
+                            </li>
+    
+                            <li>
+                                Seeking information on passwords or data belonging to another user.
+.
+                            </li>
+                            <li>
+                                Making unauthorized copies of proprietary software, or offering unauthorized copies of proprietary software to others.
+    
+                            </li>
+                            <li>
+                                Intercepting or examining the content of messages, files or communications in transit on a data network.
+
+                            </li>
+
+
+
+                        </ul>
+                    </p>
+                </details>
+                </p>
+
+                </p>
 
             </div>
-            <div class="about">
+
+
+            <div class="topic" style="padding-bottom: 30px;">
                 <p>
-                    <span class="topic">
-                        Who we are?
-                    </span>
-                    <br/>
+                    <span class="header"> Code of Conduct </span>
+                    <br />
                     <span class="explanation">
-                        The Local Connectivity Lab (LCL) is a 501(c)(3) registered 
-                        non-profit in partnership with the University of Washington (UW) 
-                        to share free or low-cost broadband access in higher-need 
-                        areas throughout the city.
+                        The Seattle Community Network (SCN) is dedicated to fostering an environment in which everyone
+                        can participate in our meetups, installs, online spaces, and any other community event. We
+                        welcome everyone of any race, age, gender, nationality, gender identity and expression, sexual
+                        orientation, disability, physical appearance, body size, religion, education, and skill level.
+                        To read more about our Code of Conduct, please refer to this <a href="seattlecommunitymnetwork.org">documentation.</a> 
                     </span>
-                   
                 </p>
-                <img src="img/partnerLogos.png" width="420" height="160" style="float: left; margin-left: 20px;">
+
+
 
             </div>
 
