@@ -1,6 +1,6 @@
 a,
 body,
-div,
+div ,
 form,
 html,
 img,
@@ -74,7 +74,7 @@ html {
   /* line-height: 30px; */
 
   /* margin-top: 10px; */
-  padding-top: 10px;
+  /* padding-top: 10px; */
 
   /* identical to box height */
   color: #49009F;
