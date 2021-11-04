@@ -59,18 +59,19 @@ html {
 .topic {
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
+  margin-top: 40px;
 
   justify-content: center;
   align-items: center;
   /* flex-flow: row wrap; */
 }
 
+
 .header {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 35px;
   /* line-height: 30px; */
 
   /* margin-top: 10px; */
@@ -84,7 +85,7 @@ html {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: normal;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 25px;
 
   color: #000000;
@@ -174,7 +175,6 @@ p::first-letter {
 
 .main {
   min-height: calc(100vh - 90px);
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,6 +184,7 @@ p::first-letter {
   flex-direction: column;
 
   margin-top: 50px;
+  margin-bottom: 50px;
   margin-left: 100px;
   margin-right: 100px;
 }
