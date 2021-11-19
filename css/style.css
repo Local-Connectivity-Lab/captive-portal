@@ -231,6 +231,13 @@ h1 {
     width: 100%;
   }
 
+  .main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
   .topic {
     display: block;
   }
