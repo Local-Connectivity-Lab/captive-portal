@@ -230,6 +230,10 @@ h1 {
   .wrap {
     width: 100%;
   }
+
+  .topic {
+    display: block;
+  }
 }
 
 form {
@@ -397,12 +401,3 @@ table td:first-child {
   color: #da3d41;
 }
 
-@media (min-width: 576px) {
-  .wrap {
-    width: 410px;
-  }
-
-  /* * {
-    font-size: 14px !important;
-  } */
-}
